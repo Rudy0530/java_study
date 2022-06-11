@@ -1,6 +1,8 @@
 package com.study.java_study.leetcode.swordfinger;
 
+import lombok.var;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 import java.util.*;
 
@@ -43,6 +45,10 @@ public class Solution {
         return Arrays.equals(arr1, arr2);
     }
 
+    /**
+     * 15题
+     * https://leetcode.cn/problems/VabMRr/
+     */
     public List<Integer> findAnagrams_15(String s, String p) {
         if (s.length() == 0 || p.length() == 0 || s.length() < p.length()) {
             return Collections.emptyList();
@@ -72,4 +78,28 @@ public class Solution {
 
     }
 
+    /**
+     * 16题目
+     * https://leetcode.cn/problems/wtcaE1/
+     */
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null) {
+            return 0;
+        }
+        if (s.length() < 2) {
+            return s.length();
+        }
+
+        int res = 1;
+        int left = 0;
+        int[] window = new int[128];
+        for (int i = 0; i < s.length(); i++) {
+            char rightChar = s.charAt(i);
+            int rightCharIndex = window[rightChar];
+            left = Math.max(left, rightCharIndex);
+            res = Math.max(res, i - left + 1);
+            window[rightChar] = i + 1;
+        }
+        return res;
+    }
 }
