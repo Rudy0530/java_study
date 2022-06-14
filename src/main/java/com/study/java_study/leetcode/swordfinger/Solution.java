@@ -102,4 +102,56 @@ public class Solution {
         }
         return res;
     }
+
+
+    /**
+     * 18题目
+     * https://leetcode.cn/problems/XltzEq/solution/
+     */
+    public boolean isPalindrome(String s) {
+        if (s == null) {
+            return false;
+        }
+
+        if ("".equals(s)) {
+            return true;
+        }
+        List<Character> lowCharList = getCharacterList(s);
+        if (lowCharList.size() == 0) {
+            return true;
+        }
+        int left = 0;
+        int right = lowCharList.size() - 1;
+        while (left < right) {
+            if (!lowCharList.get(left).equals(lowCharList.get(right))) {
+                return false;
+            }
+            left--;
+            right++;
+        }
+        return true;
+
+    }
+
+    private List<Character> getCharacterList(String s) {
+        List<Character> res = new ArrayList<>();
+        for (var item : s.toCharArray()) {
+            if (item >= 'a' && item <= 'z') {
+                res.add(item);
+            }
+            if (item >= 'A' && item <= 'Z') {
+                res.add(Character.toLowerCase(item));
+            }
+            if (item >= '0' && item <= '9') {
+                res.add(item);
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 20 题目
+     * https://leetcode.cn/problems/a7VOhD/
+     */
+    
 }
