@@ -11,7 +11,7 @@ import java.util.*;
  * @date 2022/6/9 7:40
  */
 @Component
-public class Solution {
+public class StringSolution {
 
     /**
      * 剑指 Offer II 014. 字符串中的变位词
@@ -153,5 +153,28 @@ public class Solution {
      * 20 题目
      * https://leetcode.cn/problems/a7VOhD/
      */
-    
+    public int countSubstrings(String s) {
+        if (StringUtils.isEmpty(s)) {
+            return 0;
+        }
+
+        int count = 0;
+        for (int i = 0; i < s.length(); i++) {
+            count += countPalindrome(s, i, i); //ABA形式回文
+            count += countPalindrome(s, i, i + 1); //ABBA形式回文
+        }
+
+        return count;
+
+    }
+
+    private int countPalindrome(String s, int start, int end) {
+        int count = 0;
+        while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
+            count++;
+            start--;
+            end++;
+        }
+        return count;
+    }
 }
