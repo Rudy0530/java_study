@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.swordfinger;
+package com.study.java_study.swordfinger;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

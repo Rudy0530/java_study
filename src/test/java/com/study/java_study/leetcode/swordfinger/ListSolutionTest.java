@@ -1,14 +1,12 @@
 package com.study.java_study.leetcode.swordfinger;
 
-import org.junit.jupiter.api.Test;
+import com.study.java_study.swordfinger.ListSolution;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
 
-import java.util.Deque;
 import java.util.HashMap;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ListSolutionTest {
 

@@ -1,6 +1,6 @@
 package com.study.java_study.leetcode.normal;
 
-import com.study.java_study.leetcode.swordfinger.entity.ListNode;
+import com.study.java_study.swordfinger.entity.ListNode;
 import lombok.var;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.swordfinger.entity;
+package com.study.java_study.swordfinger.entity;
 
 public class ListNode {
 
