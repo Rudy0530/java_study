@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.string;
+package com.study.java_study.string;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

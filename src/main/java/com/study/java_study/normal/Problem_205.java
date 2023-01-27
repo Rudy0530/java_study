@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.normal;
+package com.study.java_study.normal;
 
 import lombok.var;
 import org.junit.Test;

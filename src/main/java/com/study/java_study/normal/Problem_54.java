@@ -1,8 +1,7 @@
-package com.study.java_study.leetcode.normal;
+package com.study.java_study.normal;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;

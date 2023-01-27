@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.normal;
+package com.study.java_study.normal;
 
 import com.study.java_study.swordfinger.entity.ListNode;
 import lombok.var;

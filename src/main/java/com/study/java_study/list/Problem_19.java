@@ -1,4 +1,4 @@
-package com.study.java_study.leetcode.list;
+package com.study.java_study.list;
 
 import com.study.java_study.swordfinger.entity.ListNode;
 import org.junit.Test;
